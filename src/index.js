@@ -3,9 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 
+// contexts
+import { PetProvider } from './contexts/PetContext';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <PetProvider>
+      <App />
+    </PetProvider>
   </React.StrictMode>
 );
